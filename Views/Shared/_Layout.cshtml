@@ -1,0 +1,70 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]Dashboard</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="topbar">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+ *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin Dashboard</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="topbar">
+            <div class="logo">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="user-info">
+                <span>Hi, Adnan Sadat</span>
+                <img src="~/images/admin.jpg" alt="User Avatar" class="avatar">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
